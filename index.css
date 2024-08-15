@@ -1,3 +1,9 @@
-#heading{
+#external-heading{
     color: red;
+}
+#parent {
+    color: aqua;
+}
+#one-level-nesting {
+    color: beige;
 }

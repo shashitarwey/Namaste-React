@@ -10,7 +10,11 @@
     <div id="root">
       <h1>Hello World From HTML!</h1>
     </div>
-    <div id="react-root"></div>
+    <div id="inline-react-root"></div>
+    <div id="external-react-root"></div>
+    <div id="one-level-nesting"></div>
+    <div id="nesting"></div>
+    <div id="multi-nesting"></div>
     <script>
       const heading = document.createElement('h2');
       heading.innerHTML = 'Hello World from Javascript!';
@@ -26,16 +30,17 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
-    <script src="./App.js">
-      //   const reactHeading = React.createElement(
-      //     'h3',
-      //     {},
-      //     'Hello World From React!'
-      //   );
-      //   const reactRoot = ReactDOM.createRoot(
-      //     document.getElementById('react-root')
-      //   );
-      //   reactRoot.render(reactHeading);
+    <script>
+      const inlineReactHeading = React.createElement(
+        'h3',
+        {},
+        'Hello World From Inline React!'
+      );
+      const inlineReactRoot = ReactDOM.createRoot(
+        document.getElementById('inline-react-root')
+      );
+      inlineReactRoot.render(inlineReactHeading);
     </script>
+    <script src="./App.js"></script>
   </body>
 </html>
