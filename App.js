@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 // Creating a React element and rendering it
 const externalReactHeading = React.createElement(
   'h3',
